@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'view/view_placeholder.dart';
+import 'features/posts/view/view_placeholder.dart';
 
 void main(){
   runApp(const CubitFreeze());
