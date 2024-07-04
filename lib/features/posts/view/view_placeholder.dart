@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:cubit_freeze/placeholder/cubit/placeholder_cubit.dart';
+import 'package:cubit_freeze/cubit/placeholder_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
