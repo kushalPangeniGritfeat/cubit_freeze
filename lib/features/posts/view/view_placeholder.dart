@@ -1,10 +1,8 @@
-import 'dart:developer';
-
-import 'package:cubit_freeze/cubit/placeholder_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubit/placeholder_state.dart';
+import 'cubit/placeholder_cubit.dart';
+import 'cubit/placeholder_state.dart';
 
 class ViewPlaceholder extends StatefulWidget {
   const ViewPlaceholder({super.key});

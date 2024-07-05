@@ -1,9 +1,7 @@
 import 'dart:developer';
 
+import 'package:cubit_freeze/features/posts/model/post_model.dart';
 import 'package:cubit_freeze/network/api_services.dart';
-import 'package:cubit_freeze/network/dio_client.dart';
-import 'package:cubit_freeze/model/post_model.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'placeholder_state.dart';
@@ -14,8 +12,6 @@ class PlaceholderCubit extends Cubit<PlaceholderState> {
   }
 
   Future<void> fetchPost() async {
-    DioClient dio = DioClient();
-    Dio client = DioClient.client;
     emit(const PlaceholderState.loading());
     try {
       final response = await ApiServices().get(endPoint: 'https://jsonplaceholder.typicode.com/posts');

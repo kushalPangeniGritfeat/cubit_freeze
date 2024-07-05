@@ -1,9 +1,9 @@
+import 'package:cubit_freeze/features/navigation_page.dart';
 import 'package:flutter/material.dart';
 
-import 'features/posts/view/view_placeholder.dart';
 
 void main(){
-  runApp(const CubitFreeze());
+  runApp( CubitFreeze());
 }
 
 class CubitFreeze extends StatelessWidget {
@@ -13,6 +13,6 @@ class CubitFreeze extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-        home:  ViewPlaceholder());
+        home:  NavigationPage());
   }
 }
